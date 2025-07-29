@@ -27,8 +27,8 @@ export default function Login() {
       fieldErrors.email = "A valid email is required.";
     }
 
-    if (!password.trim() || password.length < 6) {
-      fieldErrors.password = "Password must be at least 6 characters long.";
+    if (!password.trim() || password.length < 8) {
+      fieldErrors.password = "Password must be at least 8 characters long.";
     }
 
     setErrors(fieldErrors);
